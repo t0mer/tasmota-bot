@@ -1,0 +1,14 @@
+---
+version: "3.7"
+
+services:
+
+  tasmota-bot:
+    image: techblog/tasmota-bot
+    container_name: tasmota-bot
+    restart: always
+    environment:
+      - BOT_TOKEN=
+      - ALLOWED_IDS=
+    volumes:
+      - ./tasmota-bot/config:/app/config
