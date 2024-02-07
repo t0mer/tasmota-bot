@@ -14,7 +14,7 @@ RUN apt -yqq update && \
 RUN pip3 install --upgrade pip --no-cache-dir && \
     pip3 install --upgrade setuptools --no-cache-dir
 
-RUN mkdir -p /app/{config,app}
+RUN mkdir -p /app/config
 
 COPY requirements.txt /tmp
 
